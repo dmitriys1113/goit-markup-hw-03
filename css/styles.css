@@ -52,8 +52,7 @@ html{
 .header-container{
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
-}
+  }
 
 .header-nav-link{
   display: block;
@@ -153,7 +152,7 @@ align-items: center;
 /*MAIN*/
 
 .main-text {
-  width: 696px;
+  max-width: 696px;
   height: 120px;
  
   font-weight: 900;
@@ -166,11 +165,32 @@ align-items: center;
   color: #ffffff;
 }
 
-.hero {
- width: 1600px;
- height: 600px;
+.main-text{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;  
+  width: 1400px;
+  height: 600px;
   background: #2f303a;
+}
+
+.hero-btn{
+  display: block;
+  align-items: center;
+  text-align: center;
+
+  }
+
+.main-hero-button{
+  margin-left: 632px;
+  margin-right: 0;
+  padding-top: 30px;
+
 }
 
 .hero-btn {
@@ -180,7 +200,7 @@ align-items: center;
   font-family: inherit;
   line-height: calc(30 / 16);
   /* identical to box height, or 188% */
-  display: flex;
+ 
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -340,10 +360,12 @@ border-radius: 0px 0px 4px 4px;
 
 .footer-portfolio{
   text-align: start;
+  padding-top: 60px;
 }
 
 .logo-footer {
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .first-part-footer {
@@ -430,6 +452,9 @@ letter-spacing: 0.03em;
 color: #212121;
 background: #F5F4FA;
 border-radius: 4px;
+
+margin-top: 94px;
+margin-right: 8px;
 }
 
 .filter-button:hover,
@@ -443,8 +468,13 @@ border-radius: 4px;
 .filter{
   display: flex;
   align-items: center;
-  
+ margin-right: auto;
+ margin-left: auto;  
   margin-bottom: 50px;
+}
+
+.filter-button:not(:last-child){
+  margin-right: 8px;
 }
 
 .portfolio-list-example{
